@@ -1,7 +1,12 @@
 import "./css/Main.css";
+import frontendCourse from "../assets/frontendCourse.png";
+import javascriptCourse from "../assets/javascriptCourse.png";
+import phpCourse from "../assets/phpCourse.png";
+import pythonCourse from "../assets/pythonCourse.png";
+import typescriptCourse from "../assets/typescriptCourse.png";
 
 function Main() {
-  <>
+  return (
     <main>
       <section id="about">
         <h1>Welcome to CodingStore</h1>
@@ -39,35 +44,35 @@ function Main() {
           <div className="codingCourses spin">
             <div className="cardProduct">
                 <h3>Frontend Course</h3>
-                <img src="../assets/frontendCourse.png" alt="Frontend Course" />
+                <img src={frontendCourse} alt="Frontend Course" />
 
                 <p>A comprehensive course to learn frontend development.</p>
                 <button>Learn More!</button>
             </div>
             <div className="cardProduct">
                 <h3>Python Course</h3>
-                <img src="../assets/pythonCourse.png" alt="Python Course" />
+                <img src={pythonCourse} alt="Python Course" />
 
                 <p>A comprehensive course to learn Python development.</p>
                 <button>Learn More!</button>
             </div>
             <div className="cardProduct">
                 <h3>JavaScript Course</h3>
-                <img src="../assets/javascriptCourse.png" alt="JavaScript Course" />
+                <img src={javascriptCourse} alt="JavaScript Course" />
 
                 <p>A comprehensive course to learn JavaScript development.</p>
                 <button>Learn More!</button>
             </div>
             <div className="cardProduct">
                 <h3>TypeScript Course</h3>
-                <img src="../assets/typescriptCourse.png" alt="TypeScript Course" />
+                <img src={typescriptCourse} alt="TypeScript Course" />
 
                 <p>A comprehensive course to learn TypeScript development.</p>
                 <button>Learn More!</button>
             </div>
             <div className="cardProduct">
                 <h3>PHP Course</h3>
-                <img src="../assets/phpCourse.png" alt="PHP Course" />
+                <img src={phpCourse} alt="PHP Course" />
 
                 <p>A comprehensive course to learn PHP development.</p>
                 <button>Learn More!</button>
@@ -123,7 +128,7 @@ function Main() {
         </div>
       </section>
     </main>
-  </>;
+  )
 }
 
 export default Main;
