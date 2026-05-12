@@ -1,0 +1,101 @@
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.logo {
+  width: 2.4em;
+  height: 1.6em;
+  color: hsl(300, 100%, 25%);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+/* LINK */
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: hsl(282deg 93% 38%);
+  font-weight: bold;
+
+  transition: color 0.3s ease;
+  padding-bottom: 6px;
+}
+
+/* LINHA */
+.nav-links li a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #7b2ff7,
+    #a855f7,
+    #c084fc
+  );
+
+  border-radius: 999px;
+
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.35s ease;
+}
+
+/* HOVER */
+.nav-links li a:hover {
+  color: hsl(282deg 93% 48%);
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* UTILS */
+
+.utils {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+
+.utils li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.utils-icon {
+  width: 1.1em;
+  height: 1.1em;
+  color: hsl(282, 92%, 35%);
+  transition: 0.3s ease;
+}
+
+.utils-icon:hover {
+  color: hsl(282deg 93% 48%);
+  transform: scale(1.08);
+}
