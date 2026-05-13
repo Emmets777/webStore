@@ -42,7 +42,7 @@
   }
 
   to {
-    transform: translateX(calc(50% - 10px));
+    transform: translateX(calc(-50% - 10px));
   }
 }
 

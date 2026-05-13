@@ -1,6 +1,8 @@
 import "./css/Main.css";
 import  Courses  from "./sub_components/Courses.jsx";
 import  Books  from "./sub_components/Books.jsx";
+import Refactoring  from "./sub_components/Refactoring.jsx";
+import Optimize  from "./sub_components/Optimize.jsx";
 
 
 function Main() {
@@ -42,9 +44,8 @@ function Main() {
 
           <Courses />
           <Books />
-
-          <div className="codeRefactoring spin"></div>
-          <div className="codeOptimization spin"></div>
+          <Refactoring />
+          <Optimize />
         </div>
 
         <h2>Our free products</h2>
