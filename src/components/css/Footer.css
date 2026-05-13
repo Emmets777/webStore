@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 0.5rem 2rem;
+}
+
+.tks {
+  text-align: center;
+}
+
+#links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#links a {
+  text-decoration: none;
+  color: purple;
+}
+
+#links a:hover {
+    color: hsl(300, 97%, 41%);
+}
+
+#rights a {
+  text-decoration: nome;
+  color: hsl(300, 60%, 37%);
+}
+
+#rights a:hover {
+  color: hsl(300, 55%, 50%);
+}
