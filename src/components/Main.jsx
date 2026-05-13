@@ -1,8 +1,10 @@
 import "./css/Main.css";
-import  Courses  from "./sub_components/Courses.jsx";
-import  Books  from "./sub_components/Books.jsx";
-import Refactoring  from "./sub_components/Refactoring.jsx";
-import Optimize  from "./sub_components/Optimize.jsx";
+import  Courses  from "./sub_components/paid/Courses.jsx";
+import  Books  from "./sub_components/paid/Books.jsx";
+import Refactoring  from "./sub_components/paid/Refactoring.jsx";
+import Optimize  from "./sub_components/paid/Optimize.jsx";
+
+import CodingSection  from "./sub_components/free/CodingSection.jsx";
 
 
 function Main() {
@@ -46,14 +48,12 @@ function Main() {
           <Books />
           <Refactoring />
           <Optimize />
+
         </div>
 
         <h2>Our free products</h2>
         <div className="free">
-          <div className="codingTutorials spin"></div>
-          <div className="codingChallenges spin"></div>
-          <div className="codingProjects spin"></div>
-          <div className="codingReview spin"></div>
+          <CodingSection />
         </div>
       </section>
     </main>

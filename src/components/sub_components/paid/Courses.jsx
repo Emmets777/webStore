@@ -1,10 +1,10 @@
-import "./subCss/Courses.css";
+import ".././subCss/Courses.css";
 import { useRef } from "react";
-import frontendCourse from "../../assets/frontendCourse.png";
-import javascriptCourse from "../../assets/javascriptCourse.png";
-import phpCourse from "../../assets/phpCourse.png";
-import pythonCourse from "../../assets/pythonCourse.png";
-import typescriptCourse from "../../assets/typescriptCourse.png";
+import frontendCourse from "../../../assets/frontendCourse.png";
+import javascriptCourse from "../../../assets/javascriptCourse.png";
+import phpCourse from "../../../assets/phpCourse.png";
+import pythonCourse from "../../../assets/pythonCourse.png";
+import typescriptCourse from "../../../assets/typescriptCourse.png";
 
 function Courses() {
   const carouselRef = useRef(null);

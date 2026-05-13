@@ -1,12 +1,12 @@
-import "./subCss/Books.css";
+import ".././subCss/Refactoring.css";
 import { useRef } from "react";
-import algorithmsBook from "../../assets/algorithmsBook.png";
-import cleanCodeBook from "../../assets/cleanCodeBook.png";
-import logicsJSBook from "../../assets/logicsJSBook.png";
-import PYBook from "../../assets/PYBook.png";
-import useUHeadBook from "../../assets/useUHeadBook.png";
+import refactoringFront from "../../../assets/refactoringFront.png";
+import refactoringJS from "../../../assets/refactoringJS.png";
+import refactoringPHP from "../../../assets/refactoringPHP.png";
+import refactoringPY from "../../../assets/refactoringPY.png";
+import refactoringTS from "../../../assets/refactoringTS.png";
 
-function Books() {
+function Refactoring() {
   const carouselRef = useRef(null);
 
   const scrollLeft = () => {
@@ -22,32 +22,31 @@ function Books() {
       behavior: "smooth",
     });
   };
-
   return (
-    <div className="carouselWrapperB">
-      <button className="carouselBtnB leftB" onClick={scrollLeft}>
+    <div className="carouselWrapperR">
+      <button className="carouselBtnR leftR" onClick={scrollLeft}>
         ◀
       </button>
-      <div className="carouselViewportB" ref={carouselRef}>
-        <div className="utilBooks">
+      <div className="carouselViewportR" ref={carouselRef}>
+        <div className="refactoringProducts">
           {/* PRIMEIRA LINHA */}
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>algorithms Book</h3>
             <img
-              src={algorithmsBook}
+              src={refactoringFront}
               alt="algorithms Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about algorithms.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Clean Code Book</h3>
             <img
-              src={cleanCodeBook}
+              src={refactoringJS}
               alt="Clean Code Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>
               A comprehensive book to learn more about clean code principles.
@@ -55,34 +54,34 @@ function Books() {
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>JavaScript Logics Book</h3>
             <img
-              src={logicsJSBook}
+              src={refactoringPHP}
               alt="JavaScript Logics Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about JavaScript logics.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Intensive Python Course Book</h3>
             <img
-              src={PYBook}
+              src={refactoringPY}
               alt="Intensive Python Course Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about Python development.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Use Your Head! development Book</h3>
             <img
-              src={useUHeadBook}
+              src={refactoringTS}
               alt="Use Your Head! development Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>
               A comprehensive book to learn more about development principles.
@@ -92,56 +91,56 @@ function Books() {
 
           {/* DUPLICAÇÃO PARA LOOP INFINITO */}
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>algorithms Book</h3>
             <img
-              src={algorithmsBook}
+              src={refactoringFront}
               alt="algorithms Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about algorithms.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Python Course</h3>
             <img
-              src={cleanCodeBook}
+              src={refactoringJS}
               alt="Python Course"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive course to learn Python development.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>JavaScript Logics Book</h3>
             <img
-              src={logicsJSBook}
+              src={refactoringPHP}
               alt="JavaScript Logics Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about JavaScript logics.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Intensive Python Course Book</h3>
             <img
-              src={PYBook}
+              src={refactoringPY}
               alt="Intensive Python Course Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>A comprehensive book to learn more about Python development.</p>
             <button>Learn More!</button>
           </div>
 
-          <div className="cardProductB">
+          <div className="cardProductR">
             <h3>Use Your Head! development Book</h3>
             <img
-              src={useUHeadBook}
+              src={refactoringTS}
               alt="Use Your Head! development Book"
-              className="productPicB"
+              className="productPicR"
             />
             <p>
               A comprehensive book to learn more about development principles.
@@ -150,11 +149,11 @@ function Books() {
           </div>
         </div>
       </div>
-      <button className="carouselBtnB rightB" onClick={scrollRight}>
+      <button className="carouselBtnR rightR" onClick={scrollRight}>
         ▶
       </button>
     </div>
   );
 }
 
-export default Books;
+export default Refactoring;

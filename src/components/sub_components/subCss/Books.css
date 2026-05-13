@@ -58,6 +58,10 @@
   transition: 0.3s ease;
 }
 
+.cardProductB p {
+  color: hsl(300deg 96% 39%);
+}
+
 .cardProductB:hover {
   transform: scale(1.03);
 }

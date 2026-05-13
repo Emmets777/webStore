@@ -1,10 +1,10 @@
-import "./subCss/Optimize.css";
+import ".././subCss/Optimize.css";
 import { useRef } from "react";
-import optimizeFront from "../../assets/optimizeFront.png";
-import optimizeJS from "../../assets/optimizeJS.png";
-import optimizePHP from "../../assets/optimizePHP.png";
-import optimizePY from "../../assets/optimizePY.png";
-import optimizeTS from "../../assets/optimizeTS.png";
+import optimizeFront from "../../../assets/optimizeFront.png";
+import optimizeJS from "../../../assets/optimizeJS.png";
+import optimizePHP from "../../../assets/optimizePHP.png";
+import optimizePY from "../../../assets/optimizePY.png";
+import optimizeTS from "../../../assets/optimizeTS.png";
 
 function Optimize() {
 

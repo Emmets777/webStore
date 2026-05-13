@@ -34,9 +34,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.3rem;
 }
 
 .paid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.free {
   width: 100%;
   display: flex;
   flex-direction: column;
