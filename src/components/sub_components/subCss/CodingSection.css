@@ -1,0 +1,119 @@
+.carouselWrapperS {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftS {
+  left: 20px;
+}
+
+.rightS {
+  right: 20px;
+}
+
+.carouselViewportS {
+  width: 100%;
+  overflow: hidden;
+}
+
+.utilFree {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  /* IMPORTANTE */
+  animation: autoScrollCoding 25s linear infinite;
+}
+
+/* PAUSA NO HOVER */
+.carouselWrapperS:hover .utilFree {
+  animation-play-state: paused;
+}
+
+/* DIREITA -> ESQUERDA */
+/* Ajustado para 4 itens + 4 repetidos */
+@keyframes autoScrollCoding {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Move exatamente 50% da largura total do .utilFree.
+       Como você tem 20px de gap, subtraímos metade dele (10px) 
+       para o encaixe ser milimétrico no loop.
+    */
+    transform: translateX(-50%);
+  }
+}
+
+.cardProductS {
+  min-width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 1.3rem;
+  background-color: hsl(271deg 25% 14%);
+  transition: 0.3s ease;
+  margin: 0;
+}
+
+.cardProductS p {
+  color: hsl(300deg 96% 39%);
+}
+
+.cardProductS:hover {
+  transform: scale(1.03);
+}
+
+.carouselBtnS {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 20;
+}
+
+/* AQUI ESTAVA ERRADO */
+.carouselWrapperS:hover .carouselBtnS {
+  opacity: 1;
+}
+
+.carouselBtnS:hover {
+  transform: scale(1.1);
+}
+
+.cardProductS button {
+  padding: 0.5rem 1rem;
+  border: 1px solid hsl(271deg 31% 36%);
+  border-radius: 5px;
+  background-color: hsl(271deg 63% 21%);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cardProductS button:hover {
+  background-color: hsl(271deg 63% 26%);
+  border: 1px solid hsl(271deg 31% 36%);
+  transform: scale(1.08);
+}
+
+.productPicS {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
