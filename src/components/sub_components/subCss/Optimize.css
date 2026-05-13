@@ -38,11 +38,11 @@
 /* DIREITA -> ESQUERDA */
 @keyframes autoScrollOptimizing {
   from {
-    transform: translateX(-50% - 10px);
+    transform: translateX(calc(-50% - 10px));
   }
 
   to {
-    transform: translateX(calc(50% + 10px));
+    transform: translateX(0);
   }
 }
 

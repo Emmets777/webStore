@@ -38,11 +38,11 @@
 /* DIREITA -> ESQUERDA */
 @keyframes autoScrollBooks {
   from {
-    transform: translateX(-100% - 10px);
+    transform: translateX(calc(-50% - 10px));
   }
 
   to {
-    transform: translateX(calc(100% + 10px));
+    transform: translateX(0);
   }
 }
 
