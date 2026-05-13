@@ -1,9 +1,7 @@
 import "./css/Main.css";
-import frontendCourse from "../assets/frontendCourse.png";
-import javascriptCourse from "../assets/javascriptCourse.png";
-import phpCourse from "../assets/phpCourse.png";
-import pythonCourse from "../assets/pythonCourse.png";
-import typescriptCourse from "../assets/typescriptCourse.png";
+import  Courses  from "./sub_components/Courses.jsx";
+import  Books  from "./sub_components/Books.jsx";
+
 
 function Main() {
   return (
@@ -41,94 +39,24 @@ function Main() {
         <h2>Our paid products</h2>
 
         <div className="paid">
-          <div className="codingCourses spin">
-            <div className="cardProduct">
-                <h3>Frontend Course</h3>
-                <img src={frontendCourse} alt="Frontend Course" />
 
-                <p>A comprehensive course to learn frontend development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>Python Course</h3>
-                <img src={pythonCourse} alt="Python Course" />
+          <Courses />
+          <Books />
 
-                <p>A comprehensive course to learn Python development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>JavaScript Course</h3>
-                <img src={javascriptCourse} alt="JavaScript Course" />
-
-                <p>A comprehensive course to learn JavaScript development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>TypeScript Course</h3>
-                <img src={typescriptCourse} alt="TypeScript Course" />
-
-                <p>A comprehensive course to learn TypeScript development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>PHP Course</h3>
-                <img src={phpCourse} alt="PHP Course" />
-
-                <p>A comprehensive course to learn PHP development.</p>
-                <button>Learn More!</button>
-            </div>
-          </div>
-          <div className="codingBooks spin">
-            {/* <div className="cardProduct">
-                <h3>Frontend Course</h3>
-                <img src="../assets/frontendCourse.png" alt="Frontend Course" />
-
-                <p>A comprehensive course to learn frontend development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>Python Course</h3>
-                <img src="../assets/pythonCourse.png" alt="Python Course" />
-
-                <p>A comprehensive course to learn Python development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>JavaScript Course</h3>
-                <img src={javascriptCourse} alt="JavaScript Course" />
-
-                <p>A comprehensive course to learn JavaScript development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>TypeScript Course</h3>
-                <img src={typescriptCourse} alt="TypeScript Course" />
-
-                <p>A comprehensive course to learn TypeScript development.</p>
-                <button>Learn More!</button>
-            </div>
-            <div className="cardProduct">
-                <h3>PHP Course</h3>
-                <img src={phpCourse} alt="PHP Course" />
-
-                <p>A comprehensive course to learn PHP development.</p>
-                <button>Learn More!</button>
-            </div> */}
-          </div>
           <div className="codeRefactoring spin"></div>
           <div className="codeOptimization spin"></div>
         </div>
 
         <h2>Our free products</h2>
         <div className="free">
-            <div className="codingTutorials spin"></div>
-            <div className="codingChallenges spin"></div>
-            <div className="codingProjects spin"></div>
-            <div className="codingReview spin"></div>
+          <div className="codingTutorials spin"></div>
+          <div className="codingChallenges spin"></div>
+          <div className="codingProjects spin"></div>
+          <div className="codingReview spin"></div>
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 export default Main;

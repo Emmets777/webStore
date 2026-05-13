@@ -23,6 +23,30 @@ body {
   background-color: var(--bg);
 }
 
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+#root {
+  opacity: 0;
+  animation: pageReveal 1.8s ease forwards;
+}
+
+@keyframes pageReveal {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(1.02);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0) brightness(1);
+    transform: scale(1);
+  }
+}
+
 h1,
 h2,
 h3 {
