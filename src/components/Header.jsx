@@ -1,31 +1,54 @@
 import "./css/Header.css";
 import { FaCode, FaUserCircle, FaCog } from "react-icons/fa";
-
-function Header() {
+function Header({ setPage }) {
   return (
     <header>
       <nav>
         <FaCode className="logo" />
         <ul className="nav-links">
           <li>
-            <a href="#">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPage("Home");
+              }}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="/about">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPage("About");
+              }}
+            >
               About
             </a>
           </li>
           <li>
-            <a href="/contact">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPage("Contact");
+              }}
+            >
               Contact
             </a>
           </li>
         </ul>
         <ul className="utils">
           <li>
-            <a href="/login">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPage("Login");
+              }}
+            >
               <FaUserCircle className="utils-icon" />
             </a>
           </li>

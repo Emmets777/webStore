@@ -30,6 +30,10 @@ footer {
     color: hsl(300, 97%, 41%);
 }
 
+#rights {
+  text-align: center;
+}
+
 #rights a {
   text-decoration: nome;
   color: hsl(300, 60%, 37%);

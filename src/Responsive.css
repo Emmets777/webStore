@@ -1,0 +1,194 @@
+@media (max-width: 480px) {
+  /* ── HEADER / NAV ── */
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-links {
+    display: none; /* esconde links — adicione menu hambúrguer no componente */
+  }
+
+  .utils {
+    gap: 0.75rem;
+  }
+
+  .utils-icon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  /* ── MAIN ── */
+  main {
+    padding: 0.75rem 1rem;
+    gap: 24px;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #productsDescription {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #products {
+    gap: 1rem;
+  }
+
+  .paid,
+  .free {
+    gap: 1rem;
+  }
+
+  /* ── FOOTER ── */
+  .wrapper {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+  }
+
+  #links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
+
+/* ─────────────────────────────────────────
+   SMARTPHONES GRANDES / LANDSCAPE  (481px – 768px)
+───────────────────────────────────────── */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ── HEADER / NAV ── */
+  nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .utils {
+    gap: 0.75rem;
+  }
+
+  /* ── MAIN ── */
+  main {
+    padding: 0.5rem 1.25rem;
+    gap: 28px;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  #about h1 {
+    font-size: 1.6rem;
+  }
+
+  #productsDescription {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  /* ── FOOTER ── */
+  .wrapper {
+    padding: 0.5rem 1.25rem;
+  }
+
+  #links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+}
+
+/* ─────────────────────────────────────────
+   TABLETS  (769px – 1024px)
+───────────────────────────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ── HEADER / NAV ── */
+  nav {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  /* ── MAIN ── */
+  main {
+    padding: 0.5rem 1.5rem;
+    gap: 32px;
+  }
+
+  #about {
+    width: 85%;
+  }
+
+  #productsDescription {
+    width: 85%;
+    margin-left: 10rem;
+  }
+
+  /* ── FOOTER ── */
+  .wrapper {
+    padding: 0.5rem 1.5rem;
+  }
+
+  #links {
+    justify-content: space-evenly;
+  }
+}
+
+/* ─────────────────────────────────────────
+   LAPTOPS  (1025px – 1280px)
+───────────────────────────────────────── */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #about {
+    width: 75%;
+  }
+
+  #productsDescription {
+    width: 75%;
+    margin-left: 8rem;
+  }
+}
+
+/* ─────────────────────────────────────────
+   DESKTOPS GRANDES  (acima de 1280px)
+───────────────────────────────────────── */
+@media (min-width: 1281px) {
+  nav {
+    padding: 0.5rem 3rem;
+  }
+
+  main {
+    padding: 0.5rem 3rem;
+  }
+
+  .wrapper {
+    padding: 0.5rem 3rem;
+  }
+
+  #about {
+    width: 65%;
+  }
+
+  #productsDescription {
+    width: 65%;
+    margin-left: 16rem;
+  }
+}

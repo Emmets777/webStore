@@ -23,10 +23,10 @@ main {
   width: 70%;
   margin-top: 3rem;
   margin-left: 13.7rem;
-}
-
-#productsDescription h1 {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  gap: 15px;
 }
 
 #products {
